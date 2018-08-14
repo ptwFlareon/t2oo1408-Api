@@ -68,3 +68,8 @@ $_SERVER
         ../img/
         index.php
 ```
+# Informações importantes
++ segue o mesmo conceito das aulas anteriores
++ este projeto não será concluído em um único dia
++ serão abordados vários temas do conteúdo do bimestre neste projeto
++ ao final o academico deve enviar um pull request com todas as implementações realizadas para avaliação

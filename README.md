@@ -18,7 +18,7 @@
 - O arquivo index.php  = nosso método main em java
 - Utilizando o servidor web embutido no PHP (dentro da pasta public)
 ``` 
- php -S 0.0.0.0:8080 index.php
+ php -S localhost:8080 index.php
 ```
 - deixar a vida mais fácil, trabalhar com caminhos relativos a raiz do projeto
 ```

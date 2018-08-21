@@ -101,6 +101,10 @@ solicitar ao router que a execute.
  });
  Router::execute($req);
 ```
+## Http
+### documentação 
+- w3c [https://www.w3.org/Protocols/]
+- mozila [https://developer.mozilla.org/en-US/docs/Web/HTTP]
 # Informações importantes
 + segue o mesmo conceito das aulas anteriores
 + este projeto não será concluído em um único dia

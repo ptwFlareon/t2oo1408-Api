@@ -105,6 +105,19 @@ solicitar ao router que a execute.
 ### documentação 
 - w3c [https://www.w3.org/Protocols/]
 - mozila [https://developer.mozilla.org/en-US/docs/Web/HTTP]
+### autenticação básica
+```
+    //enviar no header base64Encoded -> id:pwd
+    Authorization: Basic dGVzdGU6MTIz
+    // no php
+    // solicitando autenticação 
+    header('WWW-Authenticate: Basic realm="' . utf8_decode($text) . '"');
+    // negando acesso
+    header('HTTP/1.0 401 Unauthorized');
+    // variáveis
+    // PHP_AUTH_USER 
+    // PHP_AUTH_PW
+```
 # Informações importantes
 + segue o mesmo conceito das aulas anteriores
 + este projeto não será concluído em um único dia

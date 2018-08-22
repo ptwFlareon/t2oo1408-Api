@@ -1,5 +1,23 @@
 <?php
 
-	echo "<pre>";
-        
-        print_r(explode("/",$_SERVER['REQUEST_URI']));
+require_once '../MyApp/src/Core/HelloWorld.php';
+require_once '../MyApp/src/Core/Router.php';
+
+
+  $rota = $_SERVER['REQUEST_URI'];
+ 
+  MyApp\Core\Router::createRoute("/do", function(){
+      $f = new MyApp\Core\HelloWorld();
+      $f->doSomething();
+  });
+  
+  MyApp\Core\Router::createRoute("/else", function(){
+      $f = new MyApp\Core\HelloWorld();
+      $f->doSomethingElse();
+  });
+  
+  MyApp\Core\Router::createRoute("/blah", function(){
+      echo "Oi eu sou outra rota!";
+  });
+  
+  MyApp\Core\Router::executeRoute($rota);

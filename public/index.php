@@ -29,6 +29,11 @@ require_once 'MyApp/autoload.php';
   });
   
   MyApp\Core\Router::createRoute("/", function(){
+      
+    $conn = \MyApp\Services\Singleton::getInstance()->getPdo();
+      
+      $dao = new MyApp\Dao\DaoUser($conn);
+      $dao->getAllUsers();
       echo "Wellcome";
   });
 
